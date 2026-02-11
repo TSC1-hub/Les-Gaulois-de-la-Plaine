@@ -55,10 +55,12 @@ margin-top: 30px;
 }
 img {
 max-width: 100%;
+height: auto; /* Ajouté pour la réactivité */
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 margin-top: 10px;
 background: #f9f9f9;
+display: block; /* Évite les espaces sous l'image */
 }
 .photo-container {
 text-align: center;
@@ -82,6 +84,18 @@ color: white;
 text-align: center;
 padding: 20px;
 margin-top: 50px;
+}
+
+/* Classe spécifique pour forcer le côte à côte */
+.flex-side-by-side {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 15px; 
+    margin-top: 20px;
+}
+.flex-side-by-side > div {
+    flex: 1;
+    min-width: 0; /* Important pour éviter le débordement */
 }
 </style>
 </head>
@@ -132,7 +146,7 @@ margin-top: 50px;
 
 <div class="photo-container" style="margin-top: 30px;">
 <h4>😈 Notre Anti-Projet (Le pire projet possible)</h4>
-<<img src="photo3.jpeg" alt="Maquette Anti-Projet 1"> 
+<img src="photo3.jpeg" alt="Maquette Anti-Projet 1"> 
 <p><em>"Notre Anti-Projet : Tuer la végétation et les poissons par des bombes incendiaires et le rejet de bidons radioactifs dans l'eau."</em></p>
 </div>
 
@@ -187,15 +201,16 @@ margin-top: 50px;
     
 <section>
     <h3>Étape 3 - Prototyper la solution (Le Chantier)</h3>
-    <div style="display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap;">
-       <div style="flex: 1; min-width: 300px; padding: 10px;">
+    <div class="flex-side-by-side">
+       <div style="text-align: center;">
         <h4>Vue 1</h4>
-        <img src="prototype1Maxime.jpg"  alt="Photo du prototype final du Jardin Suspendu réalisé par l'équipe LGP">
+        <img src="prototype1Maxime.jpg" alt="Photo du prototype final du Jardin Suspendu réalisé par l'équipe LGP">
     </div>
-    <div style="flex: 1; min-width: 300px; padding: 10px;">
+    <div style="text-align: center;">
         <h4>Vue 2</h4>
         <img src="vue-de-cote-22.jpg" alt="Vue de côté 2 du prototype">
         <p style="margin-top: 10px;"><strong>Notre bilan :</strong> [Bilan à compléter au Jour 4]</p>
+    </div>
     </div>
 
     <div class="business">
