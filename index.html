@@ -3,239 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projet LGP - Les Gaulois de la Plaine</title>
+<title>Votre Projet - Les Gaulois de la Plaine (LGP)</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-/* Style de base */
-* { box-sizing: border-box; }
-body {
-margin: 0;
-font-family: 'Poppins', sans-serif;
-background: #fff;
-color: #333;
-line-height: 1.6;
-}
-header {
-background: #5e73ff;
-color: white;
-padding: 60px 20px;
-text-align: center;
-}
-header h1 {
-font-size: 3em;
-margin: 0;
-}
-header h2 {
-font-weight: 300;
-margin-top: 10px;
-}
-section {
-padding: 50px 20px;
-max-width: 1000px;
-margin: auto;
-border-bottom: 1px solid #eee;
-}
-h3 {
-color: #ff725e;
-font-size: 1.8em;
-border-left: 5px solid #ff725e;
-padding-left: 15px;
-margin-bottom: 30px;
-}
-.odd {
-background-color: #1a5e20;
-color: white;
-padding: 20px;
-border-radius: 10px;
-margin-top: 30px;
-}
-.business {
-background-color: #003366;
-color: white;
-padding: 20px;
-border-radius: 10px;
-margin-top: 30px;
-}
-img {
-max-width: 100%;
-height: auto;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-margin-top: 10px;
-background: #f9f9f9;
-display: block;
-}
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #fff;
+        color: #333;
+        line-height: 1.6;
+    }
+    header {
+        background: #5e73ff;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    header h2 {
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    section {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: auto;
+        border-bottom: 1px solid #eee;
+    }
+    h3 {
+        color: #ff725e;
+        font-size: 1.8em;
+        border-left: 5px solid #ff725e;
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+    h4 { color: #5e73ff; margin-top: 20px; }
+    .odd {
+        background-color: #1a5e20;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    .business {
+        background-color: #003366;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-top: 10px;
+        background: #f9f9f9;
+        display: block;
+    }
+    .photo-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .placeholder-img {
+        width: 100%;
+        height: 200px;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #ccc;
+        color: #999;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    /* Styles spécifiques au Pitch avec couleurs par bloc */
+    .pitch-container { background: #fff; padding: 30px; border-radius: 15px; border: 2px solid #5e73ff; margin-top: 20px; color: #333; }
+    .speech-box { margin-bottom: 20px; padding: 20px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .speaker-name { font-weight: bold; color: #333; display: block; margin-bottom: 8px; font-size: 1.2em; text-decoration: underline; }
+    .pitch-text-content { margin: 0; font-size: 1.1em; }
+    
+    /* Couleurs de fond pour faciliter la lecture */
+    .bg-amorce { background-color: #ffe8e5; border-left: 8px solid #ff725e; } /* Rouge/Orange clair */
+    .bg-presentation { background-color: #e8f0ff; border-left: 8px solid #5e73ff; } /* Bleu clair */
+    .bg-technique { background-color: #eaffea; border-left: 8px solid #4caf50; } /* Vert clair */
+    .bg-valeur { background-color: #fff4d1; border-left: 8px solid #ffc107; } /* Jaune clair */
+    .bg-budget { background-color: #f3e5f5; border-left: 8px solid #9c27b0; } /* Violet clair */
+    .bg-conclusion { background-color: #e0f7fa; border-left: 8px solid #00bcd4; } /* Cyan clair */
 
-/* --- STYLE VISUEL DU PITCH --- */
-.pitch-container {
-background-color: #f9f9f9;
-padding: 30px;
-border-radius: 20px;
-border: 1px solid #ddd;
-margin-top: 40px;
-}
-.speech-box {
-margin-bottom: 15px;
-padding: 15px 20px;
-border-radius: 15px;
-background: white;
-box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-border-left: 6px solid #5e73ff;
-}
-.speech-box:nth-child(even) { border-left-color: #ff725e; }
-.speech-box:nth-child(3n) { border-left-color: #1a5e20; }
+    .pitch-final-slogan { text-align: center; font-weight: bold; font-size: 1.8em; color: #ff725e; margin-top: 30px; padding: 20px; border-top: 2px dashed #5e73ff; }
 
-.speaker-name {
-font-weight: 600;
-color: #5e73ff;
-display: block;
-margin-bottom: 5px;
-text-transform: uppercase;
-font-size: 0.85em;
-letter-spacing: 1px;
-}
-.speech-box:nth-child(even) .speaker-name { color: #ff725e; }
-.speech-box:nth-child(3n) .speaker-name { color: #1a5e20; }
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
 
-.pitch-text-content {
-margin: 0;
-font-size: 1.05em;
-color: #444;
-}
-
-.pitch-final-slogan {
-text-align: center;
-font-size: 2em;
-font-weight: 600;
-color: #1a5e20;
-margin-top: 30px;
-padding: 20px;
-border: 4px solid #1a5e20;
-border-radius: 15px;
-background: #f1f8f1;
-text-transform: uppercase;
-}
-
-footer {
-background: #333;
-color: white;
-text-align: center;
-padding: 20px;
-margin-top: 50px;
-}
+    .flex-side-by-side {
+        display: flex; 
+        justify-content: space-between; 
+        gap: 15px; 
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .flex-side-by-side > div {
+        flex: 1;
+        min-width: 300px;
+    }
 </style>
 </head>
 <body>
 
 <header>
-<h1>L'Avenir de la Plaine</h1>
-<h2>Un projet de l'équipe Les Gaulois de la Plaine (LGP) - Collège Iqbal Masih</h2>
+    <h1>L'Avenir de la Plaine</h1>
+    <h2>Un projet de l'équipe Les Gaulois de la Plaine (LGP) - Collège Iqbal Masih</h2>
 </header>
 
 <section>
-<h3>Étape 0 – Se préparer : Élaborer une charte de groupe</h3>
-<p>🎯 <strong>Objectif :</strong> Construire notre boîte à outils et définir nos règles.</p>
+    <h3>Étape 0 – Se préparer : Élaborer une charte de groupe</h3>
+    <p>🎯 <strong>Objectif :</strong> Construire notre boîte à outils et définir nos règles.</p>
 
-<div class="photo-container" style="text-align: center;">
-<h4>Notre Boîte à Outils & L'Équipe</h4>
-<img src="photo1.jpeg" alt="Photo du groupe et de la boîte à outils">
-</div>
+    <div class="photo-container">
+        <h4>Notre Boîte à Outils & L'Équipe</h4>
+        <img src="photo1.jpeg" alt="Photo du groupe et de la boîte à outils">
+    </div>
 
-<div id="regles_groupe">
-<h4>Nos règles de vie :</h4>
-<ul>
-<li>S'écouter</li>
-<li>Le respect</li>
-<li>La bienveillance</li>
-<li>L'engagement</li>
-</ul>
-</div>
-
-<div id="roles_groupe" style="margin-top: 20px;">
-<h4>Nos rôles :</h4>
-<ul>
-<li><strong>Maria :</strong> Porte-parole</li>
-<li><strong>Yanis :</strong> Maître du temps</li>
-<li><strong>Hamza :</strong> Scripteur</li>
-</ul>
-</div>
+    <div class="flex-side-by-side">
+        <div id="regles_groupe">
+            <h4>Nos règles de vie :</h4>
+            <ul>
+                <li>S'écouter</li>
+                <li>Le respect</li>
+                <li>La bienveillance</li>
+                <li>L'engagement</li>
+            </ul>
+        </div>
+        <div id="roles_groupe">
+            <h4>Nos rôles :</h4>
+            <ul>
+                <li><strong>Maria :</strong> Porte-parole</li>
+                <li><strong>Yanis :</strong> Maître du temps</li>
+                <li><strong>Hamza :</strong> Scripteur</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section>
-<h3>Étape 1 - Se Questionner : Présentation de la problématique</h3>
-<div class="business"> 
-<h4>🚀 Le Défi TSC</h4>
-<p><strong>Comment rendre vivable et soutenable la vie des riverain.ne.s dans l'espace public en 2035 ?</strong></p>
-<img src="photo2.jpeg" alt="Illustration de la problématique">
-</div>
+    <h3>Étape 1 - Se Questionner : Présentation de la problématique</h3>
+    <div class="business"> 
+        <h4>🚀 Le Défi TSC</h4>
+        <p><strong>Comment rendre vivable et soutenable la vie des riverain.ne.s dans l'espace public en 2035 ?</strong></p>
+        <img src="photo2.jpeg" alt="Illustration de la problématique">
+    </div>
 
-<div style="text-align: center; margin-top: 30px;">
-<h4>😈 Notre Anti-Projet</h4>
-<img src="photo3.jpeg" alt="Maquette Anti-Projet"> 
-<p><em>"Notre Anti-Projet : Tuer la végétation et les poissons par des bombes incendiaires et le rejet de bidons radioactifs dans l'eau."</em></p>
-</div>
+    <div class="photo-container" style="margin-top: 30px;">
+        <h4>😈 Notre Anti-Projet (Le pire projet possible)</h4>
+        <img src="photo3.jpeg" alt="Maquette Anti-Projet 1"> 
+        <p><em>"Notre Anti-Projet : Tuer la végétation et les poissons par des bombes incendiaires et le rejet de bidons radioactifs dans l'eau."</em></p>
+    </div>
 </section>
 
 <section>
     <h3>Étape 2 - Concevoir : Définir et Maquetter</h3>
     <div class="odd">
         <h4>💡 Notre Projet : Le Jardin Suspendu</h4>
+        <p><strong>Bénéficiaires :</strong> Tout le monde (habitants, passants, sportifs...)</p>
+        <p><strong>Fonction :</strong> Rafraîchir la ville et purifier l'environnement.</p>
         <p><strong>IDÉE UNIQUE :</strong> Créer un abri végétalisé frais et autonome qui offre de l'eau, de la fraîcheur et un air purifié aux passants.</p>
     </div>
 
-    <div style="display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 300px; padding: 10px; text-align: center;">
-            <h4>Maquette 1:5</h4>
-            <img src="maquette1-20.jpg" alt="Maquette 1:20">
+    <div class="flex-side-by-side">
+        <div style="text-align: center;">
+            <h4>Maquette Structure (1:20)</h4>
+            <img src="maquette1-20.jpg" alt="Maquette d'étude 1:20 de l'équipe LGP">
         </div>
-        <div style="flex: 1; min-width: 300px; padding: 10px; text-align: center;">
-            <h4>Détails</h4>
-            <img src="maquette-detail.jpg" alt="Détails">
+        <div style="text-align: center;">
+            <h4>Détails techniques</h4>
+            <img src="maquette-detail.jpg" alt="Détails techniques du projet LGP">
+        </div>
+        <div style="text-align: center;">
+            <h4>Maquette Structure (1:5)</h4>
+            <img src="maquette1-5.jpg" alt="Maquette de structure 1:5 de l'équipe LGP">
         </div>
     </div>
 </section>
-
+    
 <section>
     <h3>Étape 3 - Prototyper la solution (Le Chantier)</h3>
-    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
-        <img src="prototype1Maxime.jpg" alt="Prototype 1" style="width: 45%; min-width: 300px; height: 400px; object-fit: cover;">
-        <img src="vue-de-cote-22.jpg" alt="Prototype 2" style="width: 45%; min-width: 300px; height: 400px; object-fit: cover;">
+    <div class="flex-side-by-side">
+        <div style="text-align: center;">
+            <h4>Vue 1 - Prototype Final</h4>
+            <img src="prototype1Maxime.jpg" alt="Photo du prototype final" style="height: 450px; object-fit: cover;">
+        </div>
+        <div style="text-align: center;">
+            <h4>Vue 2 - Prototype Final</h4>
+            <img src="vue-de-cote-22.jpg" alt="Vue de côté 2 du prototype" style="height: 450px; object-fit: cover;">
+        </div>
     </div>
 </section>
 
 <section>
     <h3>Étape 4 - Planifier & Présenter</h3>
+    <div class="business">
+        <h4>💼 Business Plan & Impacts</h4>
+        <ul>
+            <li><strong>Budget :</strong> Coût de production de 1 421,50 €. Prix de vente conseillé : 1 700 €.</li>
+            <li><strong>Valeur :</strong> Un refuge de santé publique gratuit garantissant l'accès à un air pur et à l'eau potable.</li>
+            <li><strong>Impacts (ODD) :</strong> Lutte contre la pollution (ODD 13) et gestion de l'eau (ODD 6).</li>
+        </ul>
+    </div>
 
     <div class="pitch-container">
-        <h4 style="color: #ff725e; text-align: center; font-size: 1.8em; margin-bottom: 25px;">🎤 SCRIPT COMPLET DU PITCH : LGP</h4>
+        <h4 style="color: #ff725e; text-align: center; font-size: 1.8em; margin-bottom: 25px; border: none;">🎤 SCRIPT COMPLET DU PITCH : LGP</h4>
         
-        <div class="speech-box">
-            <span class="speaker-name">Maria :</span>
+        <div class="speech-box bg-amorce">
+            <span class="speaker-name">Maria (L'Amorce) :</span>
             <p class="pitch-text-content">« En 2035, la population aura presque oublié la sensation d'un air frais et d'une eau saine. En été, il n'y aura plus d'ombre, ni d'arbres, les enfants seront assoiffés, les personnes âgées souffriront de la chaleur. C'est pour cela que nous, les <strong>Gaulois de la Plaine</strong>, avons trouvé une solution pour mettre fin à ce calvaire. Grâce au <strong>Jardin Suspendu</strong>, un mobilier urbain composé de matériaux recyclés et d'énergie renouvelable, nous pourrons permettre à la population de respirer et de se rafraîchir sereinement. »</p>
         </div>
 
-        <div class="speech-box">
-            <span class="speaker-name">Yanis :</span>
+        <div class="speech-box bg-presentation">
+            <span class="speaker-name">Yanis (Présentation) :</span>
             <p class="pitch-text-content">« Bonjour, nous sommes les <strong>"Gaulois de la Plaine"</strong>, et nous participons au projet "The Schools Challenge". Si nous sommes devant vous aujourd'hui c'est pour vous présenter notre projet écoresponsable, qui consiste à faciliter l'accès à l'eau potable grâce à l'eau de pluie filtrée. Ce projet contient un toit végétalisé ainsi qu'un espace de repos frais et ombragé. Il est fabriqué avec des matériaux écoresponsables. »</p>
         </div>
 
-        <div class="speech-box">
-            <span class="speaker-name">Hamza :</span>
+        <div class="speech-box bg-technique">
+            <span class="speaker-name">Hamza (Technique) :</span>
             <p class="pitch-text-content">« L'air se fait aspirer et les microplastiques présents dans l'air vont fondre en étant chauffés. Ensuite l'air va dans un deuxième compartiment où le <strong>CO₂</strong> est retiré grâce à un filtre naturel (des plantes), et après cette étape l'air pur est rejeté. Notre prototype résout la pollution de l'air avec une machine à purification d'air qui sera rechargée par des panneaux solaires. Ces panneaux solaires seront dans un entonnoir où l'eau de pluie va tomber pour être recyclée puis aller dans les robinets, fontaines, ainsi que le brumisateur. »</p>
         </div>
 
-        <div class="speech-box">
-            <span class="speaker-name">Maria :</span>
+        <div class="speech-box bg-valeur">
+            <span class="speaker-name">Maria (Valeur Ajoutée) :</span>
             <p class="pitch-text-content">« Cette solution est unique car elle est inédite, jamais commercialisée sur le marché. Le deuxième point est que notre projet est accessible à tous : homme, femme, enfant, personne à mobilité réduite et même extraterrestre contrairement à certains projets. Grâce à notre invention vous pouvez vous abriter du soleil, boire de l'eau filtrée et purifiée, s'asseoir avec des brumisateurs vous rafraîchissant et respirer un air pur pour mieux repartir. Notre projet propose de se reposer un instant pour respirer un bon air, se protéger de la chaleur et boire un bon coup. »</p>
         </div>
 
-        <div class="speech-box">
-            <span class="speaker-name">Yanis :</span>
+        <div class="speech-box bg-budget">
+            <span class="speaker-name">Yanis (Budget & Solidarité) :</span>
             <p class="pitch-text-content">« Notre coût total est de <strong>1 700 €</strong>. Nous avons adopté un revenu solidaire. Le bénéfice récolté sera utilisé à 50% pour rémunérer l'équipe de fabrication et les 50 autres % seront donnés à des associations promouvant une eau saine et potable dans le monde (ODD 6 de l'ONU). »</p>
         </div>
 
-        <div class="speech-box">
-            <span class="speaker-name">Maria :</span>
+        <div class="speech-box bg-conclusion">
+            <span class="speaker-name">Maria (Conclusion) :</span>
             <p class="pitch-text-content" style="font-style: italic;">« Plus personne n'avait vu le jardin suspendu jusqu'aujourd'hui. Désormais, notre projet fait partie des 7 merveilles du monde. »</p>
         </div>
 
@@ -245,15 +260,8 @@ margin-top: 50px;
     </div>
 </section>
 
-<section>
-<h3>Étape 5 - Convaincre : Éloquence & Product Box</h3>
-<div style="text-align: center;">
-    <p>🚀 <strong>Nous sommes prêts pour la FINALE !</strong> 🚀</p>
-</div>
-</section>
-
 <footer>
-<p>Projet réalisé au Collège Iqbal Masih - Les Gaulois de la Plaine (LGP) © 2026</p>
+    <p>Projet réalisé au Collège Iqbal Masih - Les Gaulois de la Plaine (LGP) © 2026</p>
 </footer>
 
 </body>
