@@ -6,7 +6,7 @@
 <title>Votre Projet - Les Gaulois de la Plaine (LGP)</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 <style>
-/* --- STYLES GLOBAUX (Identiques code1/code2) --- */
+/* --- STYLES GLOBAUX --- */
 * { box-sizing: border-box; }
 body {
 margin: 0;
@@ -85,7 +85,7 @@ padding: 30px;
 margin-top: 50px;
 }
 
-/* --- NOUVEAUX STYLES POUR LE PITCH (IMPORTÉS DU CODE1) --- */
+/* --- STYLES PITCH --- */
 .pitch-container {
     display: flex;
     flex-direction: column;
@@ -106,10 +106,15 @@ margin-top: 50px;
     font-size: 0.9em;
 }
 
-/* Couleurs spécifiques pour l'équipe LGP */
-.maria { background-color: #fce4ec; border-color: #e91e63; } /* Rose */
-.yanis { background-color: #e3f2fd; border-color: #2196f3; } /* Bleu */
-.hamza { background-color: #f1f8e9; border-color: #8bc34a; } /* Vert */
+.maria   { background-color: #fce4ec; border-color: #e91e63; }
+.mayla   { background-color: #fff3e0; border-color: #ff9800; }
+.delia   { background-color: #f3e5f5; border-color: #9c27b0; }
+.likhon  { background-color: #e3f2fd; border-color: #2196f3; }
+.hamza   { background-color: #f1f8e9; border-color: #8bc34a; }
+.demba   { background-color: #e0f7fa; border-color: #00bcd4; }
+.yanis   { background-color: #fff8e1; border-color: #ffc107; }
+.anna    { background-color: #fbe9e7; border-color: #ff5722; }
+.tous    { background-color: #1a5e20; border-color: #1a5e20; color: white; }
 
 .slogan-final {
     display: block;
@@ -134,7 +139,7 @@ margin-top: 50px;
 <p>🎯 <strong>Objectif :</strong> Construire notre boîte à outils et définir nos règles.</p>
 
 <div class="photo-container">
-<h4>Notre Boîte à Outils & L'Équipe</h4>
+<h4>Notre Boîte à Outils &amp; L'Équipe</h4>
 <img src="photo1.jpeg" alt="Photo du groupe et de la boîte à outils">
 </div>
 
@@ -161,7 +166,7 @@ margin-top: 50px;
 
 <section id="etape1">
 <h3>Étape 1 - Se Questionner : Présentation de la problématique</h3>
-<div class="business"> 
+<div class="business">
 <h4>🚀 Le Défi TSC</h4>
 <p><strong>Comment rendre vivable et soutenable la vie des riverain.ne.s dans l'espace public en 2035 ?</strong></p>
 <img src="photo2.jpeg" alt="Illustration de la problématique">
@@ -169,7 +174,7 @@ margin-top: 50px;
 
 <div class="photo-container" style="margin-top: 30px;">
 <h4>😈 Notre Anti-Projet (Le pire projet possible)</h4>
-<img src="photo3.jpeg" alt="Maquette Anti-Projet 1"> 
+<img src="photo3.jpeg" alt="Maquette Anti-Projet 1">
 <p style="margin-top: 15px;"><em>"Notre Anti-Projet : Tuer la végétation et les poissons par des bombes incendiaires et le rejet de bidons radioactifs dans l'eau."</em></p>
 </div>
 
@@ -185,130 +190,154 @@ margin-top: 50px;
 </section>
 
 <section id="etape2">
-    <h3>Étape 2 - Concevoir : Définir et Maquetter</h3>
-    <div class="odd">
-        <h4>💡 Notre Projet : Le Jardin Suspendu</h4>
-        <p><strong>Bénéficiaires :</strong> Tout le monde (habitants, passants, sportifs...)</p>
-        <p><strong>Fonction :</strong> Rafraîchir la ville et purifier l'environnement.</p>
-        <p><strong>Éléments :</strong> Purificateur d'air, banc, poteau réservoir (robinets/brumisateurs), toit végétalisé, panneaux solaires.</p>
-        <p><strong>IDÉE UNIQUE :</strong> Créer un abri végétalisé frais et autonome qui offre de l'eau, de la fraîcheur et un air purifié aux passants.</p>
-    </div>
+<h3>Étape 2 - Concevoir : Définir et Maquetter</h3>
+<div class="odd">
+    <h4>💡 Notre Projet : Le Jardin Suspendu</h4>
+    <p><strong>Bénéficiaires :</strong> Tout le monde (habitants, passants, sportifs...)</p>
+    <p><strong>Fonction :</strong> Rafraîchir la ville et purifier l'environnement.</p>
+    <p><strong>Éléments :</strong> Purificateur d'air, banc, poteau réservoir (robinets/brumisateurs), toit végétalisé, panneaux solaires.</p>
+    <p><strong>IDÉE UNIQUE :</strong> Créer un abri végétalisé frais et autonome qui offre de l'eau, de la fraîcheur et un air purifié aux passants.</p>
+</div>
 
-    <div style="display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap; gap: 15px;">
-        <div style="flex: 1; min-width: 280px; padding: 10px; text-align: center;">
-            <h4>Maquette Structure (1:5)</h4>
-            <img src="maquette1-20.jpg" alt="Maquette d'étude 1:20">
-        </div>
-        <div style="flex: 1; min-width: 280px; padding: 10px; text-align: center;">
-            <h4>Détails techniques</h4>
-            <img src="maquette-detail.jpg" alt="Détails techniques">
-        </div>
-        <div style="flex: 1; min-width: 280px; padding: 10px; text-align: center;">
-            <h4>Maquette Structure (Final)</h4>
-            <img src="maquette1-5.jpg" alt="Maquette structure">
-        </div>
+<div style="display: flex; justify-content: space-around; margin-top: 20px; flex-wrap: wrap; gap: 15px;">
+    <div style="flex: 1; min-width: 280px; padding: 10px; text-align: center;">
+        <h4>Maquette Structure (1:5)</h4>
+        <img src="maquette1-20.jpg" alt="Maquette d'étude 1:20">
     </div>
+    <div style="flex: 1; min-width: 280px; padding: 10px; text-align: center;">
+        <h4>Détails techniques</h4>
+        <img src="maquette-detail.jpg" alt="Détails techniques">
+    </div>
+    <div style="flex: 1; min-width: 280px; padding: 10px; text-align: center;">
+        <h4>Maquette Structure (Final)</h4>
+        <img src="maquette1-5.jpg" alt="Maquette structure">
+    </div>
+</div>
 
-    <div class="business">
-        <h4>🛠️ Planification du Chantier (Jour 3)</h4>
-        <ol>
-            <li>Mesure et traçage</li>
-            <li>Découpe des éléments bois</li>
-            <li>Ponçage des pièces</li>
-            <li>Vissage et assemblage structure</li>
-            <li>Installation technique (purification/eau)</li>
-            <li>Finition toiture végétalisée</li>
-        </ol>
-    </div>
+<div class="business">
+    <h4>🛠️ Planification du Chantier (Jour 3)</h4>
+    <ol>
+        <li>Mesure et traçage</li>
+        <li>Découpe des éléments bois</li>
+        <li>Ponçage des pièces</li>
+        <li>Vissage et assemblage structure</li>
+        <li>Installation technique (purification/eau)</li>
+        <li>Finition toiture végétalisée</li>
+    </ol>
+</div>
 </section>
-    
+
 <section id="etape3">
-    <h3>Étape 3 - Prototyper la solution (Le Chantier)</h3>
-    
-    <div style="display: flex; gap: 15px; margin-top: 20px; align-items: flex-start; flex-wrap: wrap;">
-        <div style="flex: 1; text-align: center; min-width: 300px;">
-            <h4 style="margin-bottom: 10px;">Vue 1</h4>
-            <img src="prototype1Maxime.jpg" alt="Photo du prototype final" style="width: 100%; height: 450px; object-fit: cover;">
-        </div>
-        <div style="flex: 1; text-align: center; min-width: 300px;">
-            <h4 style="margin-bottom: 10px;">Vue 2</h4>
-            <img src="vue-de-cote-22.jpg" alt="Vue de côté 2" style="width: 100%; height: 450px; object-fit: cover;">
-        </div>
-    </div>
+<h3>Étape 3 - Prototyper la solution (Le Chantier)</h3>
 
-    <div style="margin-top: 20px; padding: 15px; border-top: 1px solid #eee;">
-        <p><strong>Notre bilan :</strong> [Bilan à compléter au Jour 4]</p>
+<div style="display: flex; gap: 15px; margin-top: 20px; align-items: flex-start; flex-wrap: wrap;">
+    <div style="flex: 1; text-align: center; min-width: 300px;">
+        <h4 style="margin-bottom: 10px;">Vue 1</h4>
+        <img src="prototype1Maxime.jpg" alt="Photo du prototype final" style="width: 100%; height: 450px; object-fit: cover;">
     </div>
+    <div style="flex: 1; text-align: center; min-width: 300px;">
+        <h4 style="margin-bottom: 10px;">Vue 2</h4>
+        <img src="vue-de-cote-22.jpg" alt="Vue de côté 2" style="width: 100%; height: 450px; object-fit: cover;">
+    </div>
+</div>
 
-    <div class="business">
-        <h4>🛠️ Processus de fabrication</h4>
-        <p>Nous avons travaillé en mini-groupes tournants pour découvrir et maîtriser chaque activité : découpe, ponçage et vissage.</p>
-    </div>
+<div style="margin-top: 20px; padding: 15px; border-top: 1px solid #eee;">
+    <p><strong>Notre bilan :</strong> [Bilan à compléter au Jour 4]</p>
+</div>
+
+<div class="business">
+    <h4>🛠️ Processus de fabrication</h4>
+    <p>Nous avons travaillé en mini-groupes tournants pour découvrir et maîtriser chaque activité : découpe, ponçage et vissage.</p>
+</div>
 </section>
 
 <section id="etape4">
-    <h3>Étape 4 - Planifier & Présenter : LE PITCH LGP</h3>
+<h3>Étape 4 - Planifier &amp; Présenter : LE PITCH LGP</h3>
 
-    <div class="business">
-        <h4>💼 Business Plan & Impacts Solidaire</h4>
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
-            <div style="flex: 1; min-width: 280px;">
-                <p><strong>💰 Modèle Financier :</strong></p>
-                <ul>
-                    <li>Coût total : <strong>1 700 €</strong>.</li>
-                    <li>Modèle : Revenu solidaire.</li>
-                    <li>Répartition : 50% équipe fabrication / 50% associations (ODD 6).</li>
-                </ul>
-            </div>
-            <div style="flex: 1; min-width: 280px;">
-                <p><strong>🌍 Impacts ODD & Climat :</strong></p>
-                <ul>
-                    <li><strong>ODD 6 :</strong> Accès à l'eau potable et assainissement.</li>
-                    <li>Purification de l'air (filtration CO₂ et microplastiques).</li>
-                    <li>Création d'îlots de fraîcheur urbains.</li>
-                </ul>
-            </div>
+<div class="business">
+    <h4>💼 Business Plan &amp; Impacts Solidaire</h4>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+        <div style="flex: 1; min-width: 280px;">
+            <p><strong>💰 Modèle Financier :</strong></p>
+            <ul>
+                <li>Coût total : <strong>1 700 €</strong>.</li>
+                <li>Modèle : Revenu solidaire.</li>
+                <li>Répartition : 50% équipe fabrication / 50% associations (ODD 6).</li>
+            </ul>
+        </div>
+        <div style="flex: 1; min-width: 280px;">
+            <p><strong>🌍 Impacts ODD &amp; Climat :</strong></p>
+            <ul>
+                <li><strong>ODD 6 :</strong> Accès à l'eau potable et assainissement.</li>
+                <li>Purification de l'air (filtration CO₂ et microplastiques).</li>
+                <li>Création d'îlots de fraîcheur urbains.</li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <div class="pitch-container">
-        <h4 style="text-align: center; margin-bottom: 10px; color: #5e73ff;">🎤 SCRIPT COMPLET DU PITCH</h4>
-        
-        <div class="speaker-box maria">
-            <span class="speaker-name">Maria</span>
-            En 2035, la population aura presque oublié la sensation d'un air frais et d'une eau saine. En été, il n'y aura plus d'ombre, ni d'arbres, les enfants seront assoiffés, les personnes âgées souffriront de la chaleur. C'est pour cela que nous, les <strong>Gaulois de la Plaine</strong>, avons trouvé une solution pour mettre fin à ce calvaire. Grâce au <strong>Jardin Suspendu</strong>, un mobilier urbain composé de matériaux recyclés et d'énergie renouvelable, nous pourrons permettre à la population de respirer et de se rafraîchir sereinement.
-        </div>
+<div class="pitch-container">
+    <h4 style="text-align: center; margin-bottom: 10px; color: #5e73ff;">🎤 SCRIPT COMPLET DU PITCH</h4>
 
-        <div class="speaker-box yanis">
-            <span class="speaker-name">Yanis</span>
-            Bonjour, nous sommes les <strong>"Gaulois de la Plaine"</strong>, et nous participons au projet "The Schools Challenge". Si nous sommes devant vous aujourd'hui c'est pour vous présenter notre projet écoresponsable, qui consiste à faciliter l'accès à l'eau potable grâce à l'eau de pluie filtrée. Ce projet contient un toit végétalisé ainsi qu'un espace de repos frais et ombragé. Il est fabriqué avec des matériaux écoresponsables.
-        </div>
-
-        <div class="speaker-box hamza">
-            <span class="speaker-name">Hamza</span>
-            L'air se fait aspirer et les microplastiques présents dans l'air vont fondre en étant chauffés. Ensuite l'air va dans un deuxième compartiment où le <strong>CO₂</strong> est retiré grâce à un filtre naturel (des plantes), et après cette étape l'air pur est rejeté. Notre prototype résout la pollution de l'air avec une machine à purification d'air qui sera rechargée par des panneaux solaires. Ces panneaux solaires seront dans un entonnoir où l'eau de pluie va tomber pour être recyclée puis aller dans les robinets, fontaines, ainsi que le brumisateur.
-        </div>
-
-        <div class="speaker-box maria">
-            <span class="speaker-name">Maria</span>
-            Cette solution est unique car elle est inédite, jamais commercialisée sur le marché. Le deuxième point est que notre projet est accessible à tous : homme, femme, enfant, personne à mobilité réduite et même extraterrestre contrairement à certains projets. Grâce à notre invention vous pouvez vous abriter du soleil, boire de l'eau filtrée et purifiée, s'asseoir avec des brumisateurs vous rafraîchissant et respirer un air pur pour mieux repartir. Notre projet propose de se reposer un instant pour respirer un bon air, se protéger de la chaleur et boire un bon coup.
-        </div>
-
-        <div class="speaker-box yanis">
-            <span class="speaker-name">Yanis</span>
-            Notre coût total est de <strong>1 700 €</strong>. Nous avons adopté un revenu solidaire. Le bénéfice récolté sera utilisé à 50% pour rémunérer l'équipe de fabrication et les 50 autres % seront donnés à des associations promouvant une eau saine et potable dans le monde (ODD 6 de l'ONU).
-        </div>
-
-        <div class="speaker-box maria">
-            <span class="speaker-name">Maria</span>
-            <p style="font-style: italic;">« Plus personne n'avait vu le jardin suspendu jusqu'aujourd'hui. Désormais, notre projet fait partie des 7 merveilles du monde. »</p>
-            <span class="slogan-final">🚀 « AVEC LE JARDIN SUSPENDU, JUST BE FRESH »</span>
-        </div>
+    <div class="speaker-box maria">
+        <span class="speaker-name">Maria</span>
+        « En 2035, la population aura presque oublié la sensation d'un air frais et d'une eau saine. En été, il n'y aura plus d'ombre, ni d'arbres, les enfants seront assoiffés et les personnes âgées souffriront de la chaleur. »
     </div>
+
+    <div class="speaker-box mayla">
+        <span class="speaker-name">Mayla</span>
+        « Nous sommes les <strong>"Gaulois de la Plaine"</strong>, et nous participons au projet "The Schools Challenge". Si nous sommes devant vous aujourd'hui c'est pour vous présenter notre projet écoresponsable, qui consiste à faciliter l'accès à l'eau potable grâce à l'eau de pluie filtrée. Il contient un toit végétalisé (présent du printemps à l'automne) ainsi qu'un espace de repos frais et ombragé. Il est fabriqué avec des matériaux issus du réemploi. »
+    </div>
+
+    <div class="speaker-box delia">
+        <span class="speaker-name">Délia</span>
+        Notre solution, le <strong>Jardin Suspendu</strong> est un mobilier urbain composé de matériaux recyclés et fonctionnant à l'énergie renouvelable ! Avec ce projet, la population pourra respirer et se rafraîchir sereinement.
+    </div>
+
+    <div class="speaker-box likhon">
+        <span class="speaker-name">Likhon</span>
+        Notre prototype résout la pollution de l'air avec une machine à purification d'air qui sera rechargée par des panneaux solaires.
+    </div>
+
+    <div class="speaker-box hamza">
+        <span class="speaker-name">Hamza</span>
+        L'air se fait aspirer et les microplastiques présents dans l'air vont fondre en étant chauffés. Ensuite l'air va dans un deuxième compartiment où le <strong>CO₂</strong> est retiré grâce à un filtre naturel (des plantes), et après cette étape l'air pur est rejeté.
+    </div>
+
+    <div class="speaker-box likhon">
+        <span class="speaker-name">Likhon</span>
+        Ces panneaux solaires seront dans un entonnoir où l'eau de pluie va tomber pour être traitée puis aller dans les robinets, fontaines, ainsi que le brumisateur.
+    </div>
+
+    <div class="speaker-box demba">
+        <span class="speaker-name">Demba</span>
+        « Cette solution est unique car elle est inédite, jamais commercialisée sur le marché. Notre projet est accessible à tous : homme, femme, enfant, personne à mobilité réduite et même extraterrestre contrairement à certains projets. »
+    </div>
+
+    <div class="speaker-box yanis">
+        <span class="speaker-name">Yanis</span>
+        Grâce à notre invention vous pourrez vous abriter du soleil, boire de l'eau saine et fraîche, s'asseoir sous des brumisateurs rafraîchissants et respirer un air pur pour mieux repartir. Notre projet propose de se reposer un instant pour respirer un bon air, se protéger de la chaleur et boire un bon coup.
+    </div>
+
+    <div class="speaker-box anna">
+        <span class="speaker-name">Anna</span>
+        « Le prix d'un Jardin Suspendu est de seulement <strong>1 700 €</strong>. Nous avons adopté un revenu solidaire. Le bénéfice récolté sera utilisé à 50% pour rémunérer l'équipe de fabrication et les 50 autres % seront donnés à des associations promouvant une eau saine et potable dans le monde (ODD 6 de l'ONU). Notre objectif est d'en mettre une dizaine à St Denis, d'ici deux à trois mois, pour commencer. »
+    </div>
+
+    <div class="speaker-box maria">
+        <span class="speaker-name">Maria</span>
+        « Plus personne n'avait vu le jardin suspendu jusqu'à aujourd'hui. Désormais, notre projet fait partie des 7 merveilles du monde. »
+    </div>
+
+    <div class="speaker-box tous">
+        <span class="speaker-name">Tout le monde</span>
+        <span class="slogan-final">🚀 « AVEC LE JARDIN SUSPENDU, JUST BE FRESH »</span>
+    </div>
+</div>
 </section>
 
 <section id="etape5">
-<h3>Étape 5 - Convaincre : Éloquence & Product Box</h3>
+<h3>Étape 5 - Convaincre : Éloquence &amp; Product Box</h3>
 <div class="photo-container">
 <h4>🎤 Atelier Éloquence</h4>
 <div class="placeholder-img">[Photo de l'Atelier]</div>
@@ -323,3 +352,8 @@ margin-top: 50px;
 </section>
 
 <footer>
+<p>Projet réalisé au Collège Iqbal Masih - Les Gaulois de la Plaine © 2026</p>
+</footer>
+
+</body>
+</html>
